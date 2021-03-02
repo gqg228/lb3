@@ -1,0 +1,48 @@
+#app{
+    width: 300px;
+    border: black solid 1px;
+    margin-left: 40%
+    
+}
+button{
+    outline: none;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    box-shadow: 0 0 10px;
+}
+.cell{
+    flex: 33%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    background-color: #2b2722;
+    color: white;
+    border-radius: 0;
+    
+}
+input[type="text"]{
+    width: 290px;
+    border: 0px;
+    font-size: 18px;
+    padding: 5px 5px;
+    text-align: right;
+    background-color: #bdf5d6;
+}
+.op{
+    background-color: #46a771;
+    color:black;
+    
+    
+}
+.c{
+    flex: 50%;
+    
+}
+.ravno{
+    border-top: #2b2722 solid 3px; 
+}
