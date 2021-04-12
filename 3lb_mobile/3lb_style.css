@@ -2,7 +2,6 @@
     width: 300px;
     border: black solid 1px;
     margin-left: 40%
-    
 }
 button{
     outline: none;
@@ -13,7 +12,6 @@ button{
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    box-shadow: 0 0 10px;
 }
 .cell{
     flex: 33%;
@@ -22,10 +20,9 @@ button{
     border: none;
     background-color: #2b2722;
     color: white;
-    border-radius: 0;
-    
 }
-input[type="text"]{
+.first{
+
     width: 290px;
     border: 0px;
     font-size: 18px;
@@ -36,7 +33,7 @@ input[type="text"]{
 .op{
     background-color: #46a771;
     color:black;
-    
+  
     
 }
 .c{
@@ -44,5 +41,15 @@ input[type="text"]{
     
 }
 .ravno{
-    border-top: #2b2722 solid 3px; 
+    border-top: black solid 1px; 
+}
+.done{
+    text-decoration: line-through;
+}
+input:checked{
+    display: none;
+}
+.rub{
+    margin-top: 100px;
+    margin-left: 40%;
 }

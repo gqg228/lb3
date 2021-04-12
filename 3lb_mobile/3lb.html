@@ -11,17 +11,36 @@
 <body>
     <div id="app">
       <div class="grid">
-          <input type="text" v-model="result" placeholder="0">
+          <input type="text" v-model="result" placeholder="0" class= 'first'>
           <button @click="reset()" class="cell op c">C</button>
           <button @click="del()" class="cell op c">&larr;</button>
           <button v-on:click="input(num)"  class= "cell num"v-for="num in numbers">{{num}}</button>
           <button @click="input(op)" class= "cell op" v-for="op in operations">{{op}}</button>
-         
           <button @click="calc()" class="cell op ravno">=</button>
-
       </div>
     </div>
+<div class = "rub">
 
+   <main id="app2">
+      
+      <form @submit.prevent="addTodo">
+       
+        <input  name="tod" id="tod" value="" v-model="tod" type="text" placeholder="Вбей задачу">
+        <button type="submit" name="button">+задание</button>
+        <button name="button"@click="allDone" type="button">-все</button>
+      </form>
+      
+      <ul>
+
+        <li v-for="todo in todos">
+          <input type="checkbox" v-model="todo.done">
+          <span :class="{ done: todo.done }">{{todo.title}}</span>
+          <button @click="removeTodo(todo)" type="button" name="button">Remove</button>
+        </li>
+      </ul>
+    </main>
+</div>
+    
  <script src="3lb_script.js"></script>
 </body>
 </html>
